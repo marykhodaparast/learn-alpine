@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div x-data="{ Open: true }">
+        <button @click="Open = !Open">Toggle button</button>
+        <h1 x-show="Open">index.html</h1>
+    </div>
+</body>
+
+</html>
