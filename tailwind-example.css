@@ -1,17 +1,43 @@
-/* tailwindcss.com */
-
-.pt-4 {
-    padding-top: 1rem;
+.transition {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
 }
 
-.mt-4 {
-    margin-top: 1rem;
+.transition-all {
+    transition-property: all;
 }
 
-.flex {
-    display: flex;
+.ease-linear {
+    transition-timing-function: linear;
 }
 
-.justify-between {
-    justify-content: space-between;
+.duration-75 {
+    transition-duration: 75ms;
+}
+
+.duration-100 {
+    transition-duration: 100ms;
+}
+
+.duration-150 {
+    transition-duration: 150ms;
+}
+
+.ease-in {
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scale-75 {
+    transform: scale(.75);
+}
+
+.origin-top-right {
+    transform-origin: top right;
 }
